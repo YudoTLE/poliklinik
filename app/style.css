@@ -1,0 +1,57 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0 0.5rem 0;
+}
+
+.queue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 15rem;
+    box-sizing: border-box;
+}
+.queue .number {
+  font-size: 8rem;
+  font-weight: 700;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigate svg {
+  color: var(--primary-color-1);
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  transition: transform 0.1s ease-in;
+}
+.navigate svg:hover {
+  transform: scale(110%);
+}
+
+body {
+  position: relative;
+}
+
+.log-out {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  flex-direction: row;
+}
+
+body > *:nth-child(3) {
+  margin-top: 1rem;
+}
+body > div > *:nth-child(2) {
+  margin-top: 0.3rem;
+}
+body > div > *:nth-child(3) {
+  margin-top: 1rem;
+}

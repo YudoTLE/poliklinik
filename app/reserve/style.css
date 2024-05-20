@@ -1,0 +1,45 @@
+.container {
+    padding: 2.8rem;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form + .form {
+    margin-top: 1rem;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+input, select {
+    cursor: pointer;
+}
+.form input, .form select {
+    position: relative;
+    width: 16rem;
+    padding: 0.8rem;
+    border-radius: 100rem;
+    border: none;
+    background-color: var(--primary-color-5);
+    box-sizing: content-box;
+}
+input[type='submit'] {
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 100rem;
+    background-color: var(--primary-color-1);
+    color: var(--primary-color-3);
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: transform 0.1s ease-out;
+}
+input[type='submit']:hover {
+    transform: scale(105%);
+}
